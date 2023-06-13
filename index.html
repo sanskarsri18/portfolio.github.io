@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        body{
+            background-color: black;
+            z-index: -1;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            /* height: 900px; */
+            display: flex;
+            /* border: 2px solid red; */
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+            height: 70px;
+            /* z-index: -1; */
+            border-radius: 25px;
+        }
+        header nav div{
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        ul{
+            display: flex;
+            /* border: 2px solid green; */
+        }
+        li{
+            /* border: 2px solid purple; */
+            list-style: none;
+        }
+        ul li a{
+            /* border: 2px solid purple; */
+            text-decoration: none;
+            color: white;
+            padding: 9px 30px;
+            margin: 15px 30px;
+            border-radius: 12px;
+            background-color: black;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        ul li a:hover{
+            color: yellow;
+            background-color: red;
+           
+        }
+
+        section{
+            margin: 20px;
+            /* background-color: black; */
+        }
+
+        div.home{
+            display: flex;
+        }
+
+        #intro{
+            margin: 80px;
+            color: white;
+            font-size: 65px;
+            z-index: 1;
+        }
+        
+        .image{
+            padding: 20px 20px;
+            /* border: 2px solid red; */
+            position: absolute;
+            right: 100px;
+            width: 530px;
+        }
+        span{
+            color: orange;
+        }
+
+        footer{
+            background-color: white;
+            position: fixed;
+            bottom: 0px;
+            display: block;
+            width: 100vw;
+            /* z-index: -2; */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="home">
+        <div class="home">
+            <h1 id="intro">Hi, I'm <span>Sanskar</span> <br> Srivastava</h1>
+            <img src="/sanskar.jpg" alt="Sanskar" class="image">
+        </div>
+    </section>
+
+    <footer>copyright &copy;Sanskar.Portfolio_Website by Sanskar Srivastava</footer>
+</body>
+
+</html>
